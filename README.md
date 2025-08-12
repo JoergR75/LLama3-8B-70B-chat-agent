@@ -3,48 +3,32 @@ This Python script provides an interactive command-line chatbot powered by Huggi
 It supports real-time conversation, optimized inference with PyTorch 2.0+, and performance metrics like tokens-per-second.
 
 ✨ Features
-Supports Multiple Model Sizes
+- Supports Multiple Model Sizes
+  - Default: VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct
+  - Optional: VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct
 
-Default: VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct
+- Optimized Loading
+  - Runs in bfloat16 for faster inference on modern GPUs
+  - Automatic device placement with device_map="auto"
 
-Optional: VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct
+- Optional Model Compilation
+  - Uses torch.compile (PyTorch 2.0+) to speed up execution
 
-Optimized Loading
+- Chat History Memory
+  - Maintains conversation context between turns
 
-Runs in bfloat16 for faster inference on modern GPUs
+- Performance Metrics
+  - Response time
+  - Tokens per second (TPS)
 
-Automatic device placement with device_map="auto"
-
-Optional Model Compilation
-
-Uses torch.compile (PyTorch 2.0+) to speed up execution
-
-Chat History Memory
-
-Maintains conversation context between turns
-
-Performance Metrics
-
-Response time
-
-Tokens per second (TPS)
-
-Customizable Prompting
-
-Adjustable sampling parameters: temperature, top_p, and repetition_penalty
-
-Graceful Exit
-
-Type exit, quit, or bye to stop the chatbot
+- Customizable Prompting
+  - Adjustable sampling parameters: temperature, top_p, and repetition_penalty
 
 📦 Requirements
-Python 3.9+
-
-PyTorch 2.0+ with GPU acceleration
-
-Transformers
-
-A compatible GPU (recommended: at least 16 GB VRAM for 8B model, 48 GB+ for 70B model)
+- Python 3.9+
+- PyTorch 2.0+ with GPU acceleration
+- Transformers
+- A compatible GPU (recommended: at least 16 GB VRAM for 8B model, 48 GB+ for 70B model)
 
 Install dependencies:
 
