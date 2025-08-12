@@ -30,61 +30,23 @@ It supports real-time conversation, optimized inference with PyTorch 2.0+, and p
 - Transformers
 - A compatible GPU (recommended: at least 16 GB VRAM for 8B model, 48 GB+ for 70B model)
 
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install torch transformers
 🚀 Usage
-Clone this repository (or save the script).
+1. Clone this repository (or save the script).
+2. Run the script
 
-Run the script:
 
-bash
-Copy
-Edit
-python sauerkrautlm_chat.py
-Start chatting:
-
-vbnet
-Copy
-Edit
-Chatbot: I be ready to chat! Type exit, quit, or bye to end the conversation.
-User: Hello, who are you?
-Chatbot: I am an AI language model here to help answer your questions clearly and concisely.
 ⚙️ Configuration
-Switch Models
-In the script:
+- Switch Models
+  In the script:
+  model_id = "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct"
+  # model_id = "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct"
 
-python
-Copy
-Edit
-model_id = "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct"
-# model_id = "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct"
-Adjust Generation Parameters
-Edit:
-
-python
-Copy
-Edit
-temperature=0.7
-top_p=0.9
-repetition_penalty=1.2
-max_new_tokens=256
-Disable Model Compilation (if PyTorch < 2.0 or issues occur)
-Comment out:
-
-python
-Copy
-Edit
-model = torch.compile(model)
-📊 Example Output
-vbnet
-Copy
-Edit
-User: What's the capital of Germany?
-Chatbot: The capital of Germany is Berlin.
+- Adjust Generation Parameters
+  temperature=0.7
+  top_p=0.9
+  repetition_penalty=1.2
+  max_new_tokens=256
+  Disable Model Compilation (if PyTorch < 2.0 or issues occur)
 
 Response time: 1.84 seconds
 Tokens per second: 139.67 t/s
