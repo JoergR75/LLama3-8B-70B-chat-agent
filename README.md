@@ -46,7 +46,3 @@ It supports real-time conversation, optimized inference with PyTorch 2.0+, and p
   top_p=0.9
   repetition_penalty=1.2
   max_new_tokens=256
-  Disable Model Compilation (if PyTorch < 2.0 or issues occur)
-
-Response time: 1.84 seconds
-Tokens per second: 139.67 t/s
