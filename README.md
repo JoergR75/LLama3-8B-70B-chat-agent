@@ -37,7 +37,7 @@ It supports real-time conversation, optimized inference with PyTorch 2.0+, and p
 
 ⚙️ Configuration
 - Switch Models
-  In the script (mark and unmark "#" for the model:
+  In the script (mark and unmark "#" for the model):
   - model_id = "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct"
   - #model_id = "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct"
 
