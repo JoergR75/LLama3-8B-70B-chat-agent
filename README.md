@@ -37,12 +37,12 @@ It supports real-time conversation, optimized inference with PyTorch 2.0+, and p
 
 ⚙️ Configuration
 - Switch Models
-  In the script:
+  In the script (mark and unmark "#" for the model:
   - model_id = "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct"
-  - # model_id = "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct"
+  - #model_id = "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct"
 
 - Adjust Generation Parameters
-  temperature=0.7
-  top_p=0.9
-  repetition_penalty=1.2
-  max_new_tokens=256
+  - temperature=0.7
+  - top_p=0.9
+  - repetition_penalty=1.2
+  - max_new_tokens=256
