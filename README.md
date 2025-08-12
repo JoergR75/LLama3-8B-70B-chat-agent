@@ -1,4 +1,5 @@
-SauerkrautLM Chatbot Script
+SauerkrautLM Chatbot Script.
+
 This Python script provides an interactive command-line chatbot powered by Hugging Face Transformers and VAGOsolutions’ Llama-3 SauerkrautLM models.
 It supports real-time conversation, optimized inference with PyTorch 2.0+, and performance metrics like tokens-per-second.
 
